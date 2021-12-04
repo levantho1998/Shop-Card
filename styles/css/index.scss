@@ -1,0 +1,65 @@
+@import "navbar";
+@import "thegem";
+@import "woo";
+@import "section-cart";
+* {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.cl-blue {
+  color: #33c9dd;
+}
+.size {
+  color: #a7b4bf;
+  padding-left: 20px;
+}
+.bg {
+  background-color: #f0f3f2;
+}
+.main {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+%with-web {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  .navbar {
+    height: 55px;
+    @extend %with-web;
+    display: flex;
+    justify-content: space-between;
+    line-height: 55px;
+  }
+
+  .thegem-bg {
+    display: flex;
+    @extend %with-web;
+    justify-content: space-between;
+    height: 100px;
+  }
+  .woo {
+    background-color: #e9f0ef;
+    .woo-child {
+      display: flex;
+      @extend %with-web;
+      height: 200px;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.section {
+  background-color: #fff;
+  @extend %with-web;
+  margin-top: 50px;
+}

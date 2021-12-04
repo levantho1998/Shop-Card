@@ -1,0 +1,405 @@
+.navbar-call,
+.navbar-info,
+.navbar-user,
+.navbar-whilist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-bg {
+  background-color: #f4f6f7;
+}
+
+.fa-angle-right,
+.fa-headphones-alt {
+  margin-right: 5px;
+}
+
+.navbar-bg li {
+  padding: 0 5px;
+  color: #5f727f;
+  text-align: center;
+}
+
+.whilist {
+  color: #fff;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 9px;
+  background-color: #494c64;
+  border-radius: 5px;
+}
+
+.thegme-bg,
+.thegem-btn {
+  text-transform: uppercase;
+}
+
+.thegem-logo,
+.thegem-btn,
+.thegem-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thegem-logo span p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 27px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: #3c3950;
+  padding: 0 5px;
+}
+
+.thegem-btn li :hover {
+  color: #00bcd4;
+  cursor: pointer;
+}
+
+.thegem-btn p {
+  padding: 0 5px;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #3c3950;
+}
+
+.thegem-btn li,
+.thegem-icon li {
+  padding: 0 10px;
+}
+
+.tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tag img {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+}
+
+.tag .text-tag {
+  position: absolute;
+  -webkit-transform: translate(15px, 3px);
+          transform: translate(15px, 3px);
+  font-size: 14px;
+  color: #fff;
+}
+
+.woo .card-link {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.woo .card-link .woo-card {
+  position: relative;
+  top: -35px;
+  font-size: 50px;
+}
+
+.woo .card-link .woo-card p {
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+.woo .card-link .woo-card span {
+  font-family: system-ui;
+  font-weight: 100;
+}
+
+.woo .card-link .woo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  bottom: -40px;
+}
+
+.woo .card-link .woo-link span,
+.woo .card-link .woo-link li {
+  color: #80d2df;
+}
+
+.woo .card-link .woo-link li:hover {
+  color: #b4c1c8;
+  -webkit-text-decoration: underline red;
+          text-decoration: underline red;
+}
+
+.woo .card-link .woo-link span:hover {
+  color: #b4c1c8;
+  -webkit-text-decoration: inherit red;
+          text-decoration: inherit red;
+  display: inherit;
+}
+
+.woo .card-link .woo-link i {
+  padding: 0 15px;
+}
+
+.woo .woo-icon {
+  font-size: 110px;
+}
+
+.fa-times-circle {
+  color: red;
+}
+
+.cart-table {
+  display: table;
+  border: 1px solid;
+  width: 100%;
+}
+
+.cart-table .row {
+  display: table-row;
+}
+
+.cart-table .row .col {
+  display: table-cell;
+}
+
+.box {
+  background-color: #99a9b5;
+  width: 60px;
+  height: 60px;
+}
+
+.bd {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.section .text-top {
+  padding: 20px 0;
+  color: #5f727f;
+}
+
+.section .cart-table {
+  border-collapse: collapse;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  margin-bottom: 50px;
+}
+
+.section .cart-table .table-top {
+  height: 60px;
+  background-color: #b6c6c9;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.section .cart-table .table-top .th-product {
+  padding-left: 70px;
+  text-align: left;
+  width: 60%;
+}
+
+.section .cart-table .table-row {
+  height: 100px;
+  line-height: 100px;
+}
+
+.section .cart-table tr td {
+  text-align: center;
+}
+
+.section .cart-table tr td .option-cart {
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  margin: auto;
+}
+
+.section .cart-table tr td .option-cart input {
+  width: 42%;
+  border: none;
+  text-align: center;
+}
+
+.section .cart-table tr td .option-cart button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 27px;
+  height: 28px;
+  border: none;
+  background-color: #dfe5e8;
+}
+
+.section .cart-table tr .apply-btn {
+  text-align: left;
+  padding-left: 19px;
+}
+
+.section .cart-table tr .apply-btn input {
+  width: 240px;
+  height: 50px;
+  padding-left: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  color: #c1cad0;
+  margin-right: 15px;
+}
+
+.section .cart-table tr .apply-btn .aply {
+  width: 110px;
+  height: 50px;
+  color: #00bcd4;
+  font-weight: 600;
+  font-family: sans-serif;
+  background-color: #fff;
+  border: 3px solid #00bcd4;
+  font-size: 19px;
+}
+
+.section .cart-table tr .update {
+  text-align: left;
+}
+
+.section .cart-table tr .update .up-btn {
+  width: 185px;
+  height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #00bcd4;
+  border: none;
+  font-weight: 600;
+  font-family: -webkit-pictograph;
+  border-radius: 3px;
+}
+
+.section .cart-table tr .check {
+  text-align: left;
+}
+
+.section .cart-table tr .check .check-btn {
+  width: 190px;
+  height: 50px;
+  background-color: #393d50;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 19px;
+  position: relative;
+  border: none;
+  left: -2px;
+  border-radius: 3px;
+}
+
+.section .cart-table tr .check .check-btn .fa-check-circle {
+  padding-right: 10px;
+}
+
+.section .cart-table tr .product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .cart-table tr .product-list i,
+.section .cart-table tr .product-list .box,
+.section .cart-table tr .product-list p {
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.cl-blue {
+  color: #33c9dd;
+}
+
+.size {
+  color: #a7b4bf;
+  padding-left: 20px;
+}
+
+.bg {
+  background-color: #f0f3f2;
+}
+
+.main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.header .navbar, .header .thegem-bg, .header .woo .woo-child, .section {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header .navbar {
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 55px;
+}
+
+.header .thegem-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+}
+
+.header .woo {
+  background-color: #e9f0ef;
+}
+
+.header .woo .woo-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section {
+  background-color: #fff;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=index.css.map */

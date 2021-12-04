@@ -1,0 +1,32 @@
+$colornavbar: #5f727f;
+
+.navbar-call,
+.navbar-info,
+.navbar-user,
+.navbar-whilist {
+  display: flex;
+}
+
+.navbar-bg {
+  background-color: #f4f6f7;
+}
+
+.fa-angle-right,
+.fa-headphones-alt {
+  margin-right: 5px;
+}
+
+.navbar-bg li {
+  padding: 0 5px;
+  color: $colornavbar;
+  text-align: center;
+}
+
+.whilist {
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  padding: 5px 9px;
+  background-color: #494c64;
+  border-radius: 5px;
+}

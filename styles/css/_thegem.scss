@@ -1,0 +1,59 @@
+$color-thegem: #3c3950;
+$color-blue: #00bcd4;
+.thegme-bg,
+.thegem-btn {
+  text-transform: uppercase;
+}
+
+.thegem-logo,
+.thegem-btn,
+.thegem-icon {
+  display: flex;
+  align-items: center;
+}
+
+.thegem-logo {
+  span p {
+    align-items: center;
+    font-size: 27px;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: #3c3950;
+    padding: 0 5px;
+  }
+}
+
+.thegem-btn {
+  li :hover {
+    color: $color-blue;
+    cursor: pointer;
+  }
+  p {
+    padding: 0 5px;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: $color-thegem;
+  }
+}
+
+.thegem-btn li,
+.thegem-icon li {
+  padding: 0 10px;
+}
+
+.tag {
+  display: flex;
+  img {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+  }
+  .text-tag {
+    position: absolute;
+    transform: translate(15px, 3px);
+    font-size: 14px;
+    color: #fff;
+  }
+}

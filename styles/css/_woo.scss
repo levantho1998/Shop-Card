@@ -1,0 +1,46 @@
+$clor-woo: #80d2df;
+
+.woo {
+  .card-link {
+    flex-direction: column;
+    .woo-card {
+      position: relative;
+      top: -35px;
+      font-size: 50px;
+      p {
+        font-weight: 800;
+        font-family: sans-serif;
+      }
+      span {
+        font-family: system-ui;
+        font-weight: 100;
+      }
+    }
+    .woo-link {
+      display: flex;
+      position: relative;
+      bottom: -40px;
+      span,
+      li {
+        color: $clor-woo;
+      }
+
+      li:hover {
+        color: #b4c1c8;
+        text-decoration: underline red;
+      }
+      span:hover {
+        color: #b4c1c8;
+        text-decoration: inherit red;
+        display: inherit;
+      }
+
+      i {
+        padding: 0 15px;
+      }
+    }
+  }
+  .woo-icon {
+    font-size: 110px;
+  }
+}

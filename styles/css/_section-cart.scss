@@ -1,0 +1,186 @@
+.fa-times-circle {
+  color: red;
+}
+.cart-table {
+  display: table;
+  border: 1px solid;
+  width: 100%;
+  .row {
+    display: table-row;
+    .col {
+      display: table-cell;
+    }
+  }
+}
+.box {
+  background-color: #99a9b5;
+  width: 60px;
+  height: 60px;
+}
+.bd {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.section {
+  .text-top {
+    padding: 20px 0;
+    color: #5f727f;
+  }
+  .cart-table {
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    margin-bottom: 50px;
+    .table-top {
+      height: 60px;
+      background-color: #b6c6c9;
+      text-transform: uppercase;
+      color: #fff;
+      .th-product {
+        padding-left: 70px;
+        text-align: left;
+        width: 60%;
+      }
+    }
+    .table-row {
+      height: 100px;
+      line-height: 100px;
+    }
+    tr {
+      td {
+        text-align: center;
+        .option-cart {
+          width: 90px;
+          display: flex;
+          border: 1px solid rgba(0, 0, 0, 0.09);
+          margin: auto;
+
+          input {
+            width: 42%;
+            border: none;
+            text-align: center;
+          }
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 27px;
+            height: 28px;
+            border: none;
+            background-color: #dfe5e8;
+          }
+        }
+      }
+      .apply-btn {
+        text-align: left;
+        padding-left: 19px;
+        input {
+          width: 240px;
+          height: 50px;
+          padding-left: 20px;
+          border: 1px solid rgba(0, 0, 0, 0.09);
+          color: #c1cad0;
+          margin-right: 15px;
+        }
+        .aply {
+          width: 110px;
+          height: 50px;
+          color: #00bcd4;
+          font-weight: 600;
+          font-family: sans-serif;
+          background-color: #fff;
+          border: 3px solid #00bcd4;
+          font-size: 19px;
+        }
+      }
+      .update {
+        text-align: left;
+        .up-btn {
+          width: 185px;
+          height: 50px;
+          text-transform: uppercase;
+          color: #fff;
+          background-color: #00bcd4;
+          border: none;
+          font-weight: 600;
+          font-family: -webkit-pictograph;
+          border-radius: 3px;
+        }
+      }
+      .check {
+        text-align: left;
+        .check-btn {
+          width: 190px;
+          height: 50px;
+          background-color: #393d50;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 19px;
+          position: relative;
+          border: none;
+          left: -2px;
+          border-radius: 3px;
+          .fa-check-circle {
+            padding-right: 10px;
+          }
+        }
+      }
+      .product-list {
+        display: flex;
+        align-items: center;
+        i,
+        .box,
+        p {
+          padding: 0 20px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}
+
+// <div class="you-have">
+// <p>You Have <span> 6 Items</span> In Your Cart</p>
+// </div>
+// <div class="cart-table">
+// <div class="row">
+//   <div class="col">product</div>
+//   <div class="col">price</div>
+//   <div class="col">quantity</div>
+//   <div class="col">total</div>
+// </div>
+// <div class="row">
+//   <div class="col">
+//     <i class="far fa-times-circle"></i>
+//     <div class="box"></div>
+//     <p>Lorem ipsum dolor sit amet Size: Large, Color: Black</p>
+//   </div>
+//   <div class="col">price</div>
+//   <div class="col">quantity</div>
+//   <div class="col">total</div>
+// </div>
+// <div class="row">
+//   <div class="col">product</div>
+//   <div class="col">price</div>
+//   <div class="col">quantity</div>
+//   <div class="col">total</div>
+// </div>
+// <div class="row">
+//   <div class="col">product</div>
+//   <div class="col">price</div>
+//   <div class="col">quantity</div>
+//   <div class="col">total</div>
+// </div>
+// <div class="row">
+//   <div class="col">product</div>
+//   <div class="col">price</div>
+//   <div class="col">quantity</div>
+//   <div class="col">total</div>
+// </div>
+// <div class="row">
+//   <div class="col">product</div>
+//   <div class="col">price</div>
+//   <div class="col">quantity</div>
+//   <div class="col">total</div>
+// </div>
+// <div class="row"></div>
+// </div>
