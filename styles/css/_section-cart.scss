@@ -1,6 +1,15 @@
 .fa-times-circle {
   color: red;
 }
+
+%ptotal {
+  padding: 20px 0;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #3c3950;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 .cart-table {
   display: table;
   border: 1px solid;
@@ -51,13 +60,13 @@
         .option-cart {
           width: 90px;
           display: flex;
-          border: 1px solid rgba(0, 0, 0, 0.09);
           margin: auto;
 
           input {
             width: 42%;
             border: none;
             text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.09);
           }
           button {
             display: flex;
@@ -136,51 +145,162 @@
       }
     }
   }
+  .calculate {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .cal-form {
+      width: 48%;
+      p {
+        @extend %ptotal;
+      }
+      select {
+        width: 100%;
+        height: 35px;
+        padding: 0 10px;
+        margin-bottom: 15px;
+        color: #cfd7dc;
+        border: 1px solid;
+        option {
+          padding: 0 10px;
+        }
+      }
+      .cal-ip {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        input {
+          width: 45%;
+          padding: 0 10px;
+          height: 30px;
+          color: #cfd7dc;
+          border: 1px solid;
+        }
+      }
+      .cal-btn {
+        width: 200px;
+        height: 50px;
+        background-color: #fff;
+        border: 4px solid #00bcd4;
+        border-radius: 3px;
+        color: #00bcd4;
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 19px;
+      }
+    }
+    .cart-total {
+      width: 48%;
+      p {
+        @extend %ptotal;
+      }
+      .total-price {
+        display: table;
+        width: 100%;
+        .row {
+          display: table-row;
+          color: #5f727f;
+          width: 50%;
+          .col {
+            display: table-cell;
+            border: 1px solid #ccc;
+            text-align: left;
+            padding-left: 15px;
+          }
+          .col-left {
+            background-color: #f0f3f2;
+          }
+        }
+        .row-hegth {
+          height: 50px;
+          line-height: 50px;
+          .price-15 {
+            font-size: 24px;
+          }
+        }
+        .row-two {
+          .col-hght {
+            height: 90px;
+            line-height: 90px;
+          }
+          .col li {
+            list-style: square;
+            font-size: 14px;
+          }
+          .col {
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+  .maybe {
+    margin-bottom: 120px;
+    .maybe-title {
+      padding: 50px 0;
+      margin-bottom: 20px;
+      font-size: 36px;
+      text-transform: uppercase;
+      color: #3c3950;
+      font-family: sans-serif;
+    }
+    .maybe-list {
+      display: flex;
+      justify-content: space-between;
+    }
+    .maybe-items {
+      .bg-items {
+        background-color: #f0f3f2;
+        height: 200px;
+        width: 160px;
+        position: relative;
+      }
+      .circle-sale {
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        background-color: #00bcd4;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 2;
+        transform: translate(118px, 30px);
+      }
+      .circle-new {
+        width: 54px;
+        height: 54px;
+        border-radius: 54px;
+        background-color: #393d50;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 1;
+        transform: translate(122px, 79px);
+      }
+      .maybe-price {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 85px;
+        border: 1px solid rgba(0, 0, 0, 0.09);
+        border-top: none;
+        p {
+          padding: 5px;
+        }
+        .p-price {
+          color: #22c5da;
+        }
+        .demi-text {
+          color: #5f727f;
+        }
+      }
+    }
+  }
 }
-
-// <div class="you-have">
-// <p>You Have <span> 6 Items</span> In Your Cart</p>
-// </div>
-// <div class="cart-table">
-// <div class="row">
-//   <div class="col">product</div>
-//   <div class="col">price</div>
-//   <div class="col">quantity</div>
-//   <div class="col">total</div>
-// </div>
-// <div class="row">
-//   <div class="col">
-//     <i class="far fa-times-circle"></i>
-//     <div class="box"></div>
-//     <p>Lorem ipsum dolor sit amet Size: Large, Color: Black</p>
-//   </div>
-//   <div class="col">price</div>
-//   <div class="col">quantity</div>
-//   <div class="col">total</div>
-// </div>
-// <div class="row">
-//   <div class="col">product</div>
-//   <div class="col">price</div>
-//   <div class="col">quantity</div>
-//   <div class="col">total</div>
-// </div>
-// <div class="row">
-//   <div class="col">product</div>
-//   <div class="col">price</div>
-//   <div class="col">quantity</div>
-//   <div class="col">total</div>
-// </div>
-// <div class="row">
-//   <div class="col">product</div>
-//   <div class="col">price</div>
-//   <div class="col">quantity</div>
-//   <div class="col">total</div>
-// </div>
-// <div class="row">
-//   <div class="col">product</div>
-//   <div class="col">price</div>
-//   <div class="col">quantity</div>
-//   <div class="col">total</div>
-// </div>
-// <div class="row"></div>
-// </div>

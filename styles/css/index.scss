@@ -2,6 +2,8 @@
 @import "thegem";
 @import "woo";
 @import "section-cart";
+@import "gem-bottom";
+@import "footer";
 * {
   margin: 0;
   margin: 0;
@@ -25,7 +27,9 @@
 li {
   list-style: none;
 }
-
+a {
+  color: #0993a9;
+}
 %with-web {
   max-width: 1170px;
   margin: 0 auto;

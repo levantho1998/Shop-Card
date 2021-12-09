@@ -1,0 +1,246 @@
+%colortitle {
+  font-size: 19px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+%crile {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: #99a9b5;
+  margin-right: 10px;
+}
+
+%flex-gembottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+%heght-gem {
+  margin-top: 50px;
+  height: 50%;
+}
+%squa {
+  background-color: #828e97;
+  width: 80px;
+  height: 80px;
+}
+hr {
+  border-top: 1px dashed #50586a;
+  margin: 15px 0;
+}
+a {
+  color: #0993a9;
+}
+h3 {
+  @extend%colortitle;
+}
+.fa-caret-down {
+  color: red;
+  line-height: 22px;
+}
+.fa-circle {
+  font-size: 9px;
+}
+.pd-right {
+  padding-right: 10px;
+}
+.cl-link {
+  color: #91a0ac;
+}
+
+.gem-bg {
+  background-color: #212331;
+  height: 900px;
+  .gem-bg-child {
+    @extend %with-web;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: #91a0ac;
+    .gem {
+      @extend %flex-gembottom;
+      .gem-img {
+        display: flex;
+        i {
+          font-size: 50px;
+          line-height: 80px;
+        }
+        p {
+          font-size: 36px;
+          color: #fff;
+
+          span {
+            font-family: sans-serif;
+            font-weight: 600;
+          }
+        }
+      }
+      .gem-text {
+        color: #99a9b5;
+        font-family: cursive;
+        line-height: 23px;
+      }
+      .gem-contact {
+        p,
+        li {
+          line-height: 35px;
+        }
+      }
+    }
+    .wd {
+      width: 261px;
+      height: 640px;
+    }
+    .post {
+      .cile-top {
+        @extend %heght-gem;
+        .post-circle {
+          display: flex;
+          .circle {
+            @extend %crile;
+          }
+          .circle-1 {
+            @extend %crile;
+            background-color: #4b565d;
+          }
+          .circle-2 {
+            @extend %crile;
+            background-color: #63707a;
+          }
+          .comment {
+            .cmt {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+    .useful {
+      li {
+        line-height: 7px;
+        list-style: inside;
+        color: #0993a9;
+      }
+      li:nth-child(5) {
+        color: #fff;
+        span {
+          color: #0993a9;
+        }
+      }
+    }
+  }
+  .us {
+    .email-top {
+      @extend %heght-gem;
+      position: relative;
+      input {
+        line-height: 30px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.09);
+        box-sizing: border-box;
+        color: #464756;
+        border-radius: 3px;
+        background-color: #181828;
+      }
+      .mail-add {
+        color: #99a9b5;
+        input {
+          border: 2px solid #00bcd4;
+        }
+      }
+      .fa-user {
+        position: absolute;
+        top: 8px;
+        right: 6px;
+      }
+      .fa-envelope {
+        position: absolute;
+        right: 6px;
+        top: 55px;
+      }
+      .mes {
+        input {
+          height: 100px;
+          color: #464756;
+        }
+      }
+      button {
+        width: 100%;
+        line-height: 38px;
+        text-transform: uppercase;
+        background-color: #394050;
+        color: #99a9b5;
+        border-radius: 3px;
+        border: none;
+      }
+    }
+  }
+  .clients {
+    .squares {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 166px;
+      .squares-list {
+        display: flex;
+        justify-content: space-around;
+        .squares-items {
+          @extend %squa;
+        }
+      }
+    }
+  }
+  .flcikr {
+    .sq {
+      @extend %heght-gem;
+      display: flex;
+      flex-direction: column;
+
+      .sq-list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9px;
+        .sq-items {
+          @extend %squa;
+        }
+      }
+    }
+    .newsletter {
+      p {
+        margin-bottom: 45px;
+      }
+      .text-letter {
+        position: relative;
+        input {
+          width: 100%;
+          background-color: #181828;
+          height: 40px;
+          border-radius: 3px;
+          color: #494a59;
+          border: 1px solid #394050;
+        }
+        .fa-chevron-right {
+          position: absolute;
+          top: 0px;
+          right: -1px;
+          background-color: red;
+          padding: 13px 16px;
+          border: none;
+          background-color: #394050;
+          border-radius: 3px;
+        }
+        p {
+          font-size: 14px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

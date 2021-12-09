@@ -1,0 +1,41 @@
+.footer {
+  background-color: #181828;
+  color: #8c9ba7;
+  height: 100px;
+  .footer-child {
+    @extend %with-web;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 100px;
+    li {
+      padding: 0 10px;
+    }
+    .fa-facebook {
+      color: #315bd6;
+    }
+    .fa-linkedin-in {
+      color: #0672af;
+    }
+    .fa-instagram {
+      color: #c782ae;
+    }
+    .fa-youtube {
+      color: #ae0e0e;
+    }
+    .fa-google-plus-g {
+      color: #53232c;
+    }
+    .fa-pinterest-p {
+      color: #f05354;
+    }
+    .copyringht {
+    }
+    .suppot {
+      display: flex;
+    }
+    .network {
+      display: flex;
+    }
+  }
+}
