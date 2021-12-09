@@ -4,9 +4,7 @@
   height: 100px;
   .footer-child {
     @extend %with-web;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(null, space-between, center, wrap);
     line-height: 100px;
     li {
       padding: 0 10px;
@@ -29,13 +27,11 @@
     .fa-pinterest-p {
       color: #f05354;
     }
-    .copyringht {
-    }
     .suppot {
-      display: flex;
+      @include flex();
     }
     .network {
-      display: flex;
+      @include flex();
     }
   }
 }

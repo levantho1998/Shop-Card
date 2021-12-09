@@ -160,6 +160,10 @@
   color: red;
 }
 
+.fa-times-circle:hover {
+  cursor: pointer;
+}
+
 .section .calculate .cal-form p, .section .calculate .cart-total p {
   padding: 20px 0;
   font-size: 36px;
@@ -256,6 +260,10 @@
   background-color: #dfe5e8;
 }
 
+.section .cart-table tr td .option-cart button:hover {
+  cursor: pointer;
+}
+
 .section .cart-table tr .apply-btn {
   text-align: left;
   padding-left: 19px;
@@ -281,6 +289,10 @@
   font-size: 19px;
 }
 
+.section .cart-table tr .apply-btn .aply:hover {
+  cursor: pointer;
+}
+
 .section .cart-table tr .update {
   text-align: left;
 }
@@ -295,6 +307,10 @@
   font-weight: 600;
   font-family: -webkit-pictograph;
   border-radius: 3px;
+}
+
+.section .cart-table tr .update .up-btn:hover {
+  cursor: pointer;
 }
 
 .section .cart-table tr .check {
@@ -312,6 +328,10 @@
   border: none;
   left: -2px;
   border-radius: 3px;
+}
+
+.section .cart-table tr .check .check-btn:hover {
+  cursor: pointer;
 }
 
 .section .cart-table tr .check .check-btn .fa-check-circle {
@@ -722,7 +742,8 @@ a {
   color: #99a9b5;
 }
 
-.gem-bg .us .email-top .mail-add input {
+.gem-bg .us .email-top .mail-add input:focus {
+  outline: none;
   border: 2px solid #00bcd4;
 }
 
@@ -844,6 +865,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   line-height: 100px;
 }
 
@@ -879,12 +902,20 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .footer .footer-child .network {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 * {

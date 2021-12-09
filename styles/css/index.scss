@@ -34,6 +34,13 @@ a {
   max-width: 1170px;
   margin: 0 auto;
 }
+@mixin flex($direction: row, $content: null, $items: null, $wrap: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+  flex-wrap: $wrap;
+}
 
 .header {
   .navbar {

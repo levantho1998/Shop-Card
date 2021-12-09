@@ -57,9 +57,8 @@ h3 {
   height: 900px;
   .gem-bg-child {
     @extend %with-web;
+    @include flex(null, space-between, null, null);
     padding-top: 100px;
-    display: flex;
-    justify-content: space-between;
     color: #91a0ac;
     .gem {
       @extend %flex-gembottom;
@@ -151,7 +150,9 @@ h3 {
       }
       .mail-add {
         color: #99a9b5;
-        input {
+
+        input:focus {
+          outline: none;
           border: 2px solid #00bcd4;
         }
       }
@@ -184,9 +185,7 @@ h3 {
   }
   .clients {
     .squares {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      @include flex(column, space-between, null, wrap);
       height: 166px;
       .squares-list {
         display: flex;
