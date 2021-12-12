@@ -1,4 +1,5 @@
 $colornavbar: #5f727f;
+@import "reponsive";
 
 .navbar-call,
 .navbar-info,
@@ -6,7 +7,14 @@ $colornavbar: #5f727f;
 .navbar-whilist {
   display: flex;
 }
-
+.navbar {
+  height: 55px;
+  @extend %with-web;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f6f7;
+}
 .navbar-bg {
   background-color: #f4f6f7;
 }
@@ -16,7 +24,7 @@ $colornavbar: #5f727f;
   margin-right: 5px;
 }
 
-.navbar-bg li {
+.navbar li {
   padding: 0 5px;
   color: $colornavbar;
   text-align: center;

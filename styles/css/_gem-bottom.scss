@@ -1,3 +1,5 @@
+@import "mixin";
+@import "reponsive";
 %colortitle {
   font-size: 19px;
   color: #fff;
@@ -37,10 +39,12 @@ a {
 }
 h3 {
   @extend%colortitle;
+  font-family: sans-serif;
 }
 .fa-caret-down {
   color: red;
   line-height: 22px;
+  margin-left: 10px;
 }
 .fa-circle {
   font-size: 9px;
@@ -57,11 +61,17 @@ h3 {
   height: 900px;
   .gem-bg-child {
     @extend %with-web;
-    @include flex(null, space-between, null, null);
+    @include flex(null, space-between, null, wrap);
     padding-top: 100px;
+    background-color: #212331;
+    height: 100%;
+
     color: #91a0ac;
+
     .gem {
       @extend %flex-gembottom;
+      background-color: #212331;
+
       .gem-img {
         display: flex;
         i {
@@ -188,8 +198,7 @@ h3 {
       @include flex(column, space-between, null, wrap);
       height: 166px;
       .squares-list {
-        display: flex;
-        justify-content: space-around;
+        @include flex(row, space-around, null, wrap);
         .squares-items {
           @extend %squa;
         }
@@ -199,12 +208,10 @@ h3 {
   .flcikr {
     .sq {
       @extend %heght-gem;
-      display: flex;
-      flex-direction: column;
+      @include flex(column, null, null, wrap);
 
       .sq-list {
-        display: flex;
-        justify-content: space-between;
+        @include flex(null, space-between, null, wrap);
         margin-bottom: 9px;
         .sq-items {
           @extend %squa;

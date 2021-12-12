@@ -6,6 +6,8 @@
     @extend %with-web;
     @include flex(null, space-between, center, wrap);
     line-height: 100px;
+    background-color: #181828;
+
     li {
       padding: 0 10px;
     }

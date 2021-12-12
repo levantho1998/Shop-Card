@@ -4,10 +4,13 @@
 @import "section-cart";
 @import "gem-bottom";
 @import "footer";
+@import "mixin";
+@import "reponsive";
+
 * {
   margin: 0;
-  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .cl-blue {
@@ -20,9 +23,6 @@
 .bg {
   background-color: #f0f3f2;
 }
-.main {
-  box-sizing: border-box;
-}
 
 li {
   list-style: none;
@@ -31,46 +31,7 @@ a {
   color: #0993a9;
 }
 %with-web {
-  max-width: 1170px;
+  width: 1170px;
   margin: 0 auto;
-}
-@mixin flex($direction: row, $content: null, $items: null, $wrap: null) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $content;
-  align-items: $items;
-  flex-wrap: $wrap;
-}
-
-.header {
-  .navbar {
-    height: 55px;
-    @extend %with-web;
-    display: flex;
-    justify-content: space-between;
-    line-height: 55px;
-  }
-
-  .thegem-bg {
-    display: flex;
-    @extend %with-web;
-    justify-content: space-between;
-    height: 100px;
-  }
-  .woo {
-    background-color: #e9f0ef;
-    .woo-child {
-      display: flex;
-      @extend %with-web;
-      height: 200px;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-}
-
-.section {
-  background-color: #fff;
-  @extend %with-web;
-  margin-top: 50px;
+  max-width: 100%;
 }

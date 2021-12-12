@@ -1,6 +1,15 @@
 $clor-woo: #80d2df;
 
 .woo {
+  background-color: #e9f0ef;
+  .woo-child {
+    display: flex;
+    @extend %with-web;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9f0ef;
+  }
   .card-link {
     flex-direction: column;
     .woo-card {

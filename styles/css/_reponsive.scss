@@ -1,0 +1,241 @@
+@import "mixin";
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  html,
+  body {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  h3 {
+    margin-bottom: 10px;
+  }
+  .header {
+    max-width: 768;
+    margin: 0 auto;
+
+    .navbar-bg {
+      .navbar {
+        padding: 0 1rem;
+        .navbar-call {
+        }
+        .navbar-info {
+        }
+        .navbar-user {
+          display: none;
+        }
+        .navbar-whilist {
+        }
+      }
+    }
+  }
+  .thegem {
+    .thegem-bg {
+      .thegem-logo {
+        padding: 0 1rem;
+      }
+
+      .thegem-btn {
+        display: none;
+      }
+      .thegem-icon {
+        display: none;
+      }
+    }
+  }
+  .woo {
+    .woo-child {
+      padding-left: 1rem;
+    }
+    .woo-icon {
+      display: none;
+    }
+  }
+  .section {
+    .isMobile {
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      font-size: 12px;
+    }
+    .calculate {
+      padding: 0 1rem;
+      flex-direction: column;
+      align-items: center;
+      .cal-form {
+        width: 100%;
+      }
+      .cart-total {
+        width: 100%;
+      }
+    }
+    .maybe {
+      padding: 0 1rem;
+      .maybe-list {
+        margin: 0 30px;
+        @include flex(null, space-around, null, null);
+        .maybe-items {
+          margin: 20px 0;
+          // width: 100%;
+          .bg-items {
+            width: 100%;
+          }
+        }
+        .maybe-price {
+        }
+      }
+    }
+  }
+  .gem-bg {
+    height: auto;
+    .gem-bg-child {
+      flex-direction: column;
+      height: max-content;
+      align-items: center;
+    }
+    .wd {
+      margin: 20px 0;
+    }
+  }
+  .footer {
+    .footer-child {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) and(max-width:767px) {
+  .navbar-bg {
+    .navbar {
+      padding: 0 1rem;
+      .navbar-call {
+      }
+      .navbar-info {
+      }
+      .navbar-user {
+        display: none;
+      }
+      .navbar-whilist {
+      }
+    }
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  .header {
+    max-width: 768;
+    margin: 0 auto;
+
+    .navbar-bg {
+      .navbar {
+      }
+    }
+  }
+  .thegem {
+    .thegem-bg {
+      .thegem-logo {
+        padding: 0 1rem;
+      }
+
+      .thegem-btn {
+      }
+      .thegem-icon {
+        display: none;
+      }
+    }
+  }
+  .woo {
+    padding: 0 1rem;
+    .woo-icon {
+    }
+  }
+  .section {
+    .isMobile {
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      font-size: 12px;
+    }
+    .calculate {
+      padding: 0 1rem;
+
+      flex-direction: column;
+      align-items: center;
+      .cal-form {
+        width: 100%;
+      }
+      .cart-total {
+        padding: 0 20px;
+
+        width: 100%;
+      }
+    }
+    .maybe {
+      padding: 0 1rem;
+      .maybe-list {
+        flex-direction: column;
+        align-items: center;
+
+        .maybe-items {
+          margin: 20px 0;
+          width: 100%;
+          .bg-items {
+            width: 100%;
+          }
+        }
+        .maybe-price {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .gem-bg {
+    height: auto;
+    .gem-bg-child {
+      flex-direction: column;
+      height: max-content;
+      align-items: center;
+    }
+    .wd {
+      margin: 20px 0;
+    }
+  }
+  .footer {
+    .footer-child {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and(max-width:1024px) {
+  .isMobile {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  .section {
+    .maybe {
+      .maybe-list {
+        @include flex(null, space-around, null, null);
+        .maybe-items {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .gem-bg {
+    height: auto;
+    .gem-bg-child {
+      @include flex(null, space-around, null, null);
+    }
+  }
+  .footer {
+    .footer-child {
+      @include flex(null, space-around, null, wrap);
+    }
+  }
+}

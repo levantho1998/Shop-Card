@@ -1,3 +1,4 @@
+@import "mixin";
 .fa-times-circle {
   color: red;
   &:hover {
@@ -34,6 +35,9 @@
 }
 
 .section {
+  background-color: #fff;
+  @extend %with-web;
+  margin-top: 50px;
   .text-top {
     padding: 20px 0;
     color: #5f727f;
@@ -260,10 +264,10 @@
       font-family: sans-serif;
     }
     .maybe-list {
-      display: flex;
-      justify-content: space-between;
+      @include flex(null, space-between, null, wrap);
     }
     .maybe-items {
+      height: 285px;
       .bg-items {
         background-color: #f0f3f2;
         height: 200px;
@@ -306,6 +310,8 @@
         height: 85px;
         border: 1px solid rgba(0, 0, 0, 0.09);
         border-top: none;
+
+        width: 160px;
         p {
           padding: 5px;
         }

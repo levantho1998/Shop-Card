@@ -5,55 +5,68 @@ $color-blue: #00bcd4;
   text-transform: uppercase;
 }
 
-.thegem-logo,
-.thegem-btn,
-.thegem-icon {
-  display: flex;
-  align-items: center;
-}
-
-.thegem-logo {
-  span p {
+.thegem {
+  .thegem-bg {
+    display: flex;
+    flex-wrap: wrap;
+    @extend %with-web;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #fff;
     align-items: center;
-    font-size: 27px;
-    font-family: sans-serif;
-    font-weight: 800;
-    color: #3c3950;
-    padding: 0 5px;
-  }
-}
+    .thegem-logo {
+      display: flex;
+      span p {
+        align-items: center;
+        font-size: 27px;
+        font-family: sans-serif;
+        font-weight: 800;
+        color: #3c3950;
+        padding: 0 5px;
+      }
+    }
+    .thegem-btn {
+      display: flex;
+      li {
+        padding: 0 10px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
 
-.thegem-btn {
-  li :hover {
-    color: $color-blue;
-    cursor: pointer;
-  }
-  p {
-    padding: 0 5px;
-    font-size: 14px;
-    font-weight: 800;
-    font-family: sans-serif;
-    color: $color-thegem;
-  }
-}
+      p {
+        padding: 0 5px;
+        font-size: 14px;
+        font-weight: 800;
+        font-family: sans-serif;
+        color: $color-thegem;
+      }
+    }
+    .thegem-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        margin: 0 10px;
+      }
+      .tag {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        top: 5px;
 
-.thegem-btn li,
-.thegem-icon li {
-  padding: 0 10px;
-}
-
-.tag {
-  display: flex;
-  img {
-    position: relative;
-    width: 25px;
-    height: 25px;
-    top: 5px;
-  }
-  .text-tag {
-    position: absolute;
-    transform: translate(15px, 3px);
-    font-size: 14px;
-    color: #fff;
+        img {
+          width: 25px;
+          height: 25px;
+          top: 5px;
+        }
+        .text-tag {
+          position: absolute;
+          transform: translate(12px, -30px);
+          font-size: 14px;
+          color: #fff;
+        }
+      }
+    }
   }
 }
