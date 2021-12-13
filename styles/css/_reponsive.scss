@@ -74,17 +74,21 @@
     .maybe {
       padding: 0 1rem;
       .maybe-list {
-        margin: 0 30px;
-        @include flex(null, space-around, null, null);
+        flex-direction: column;
+        align-items: center;
+
         .maybe-items {
           margin: 20px 0;
-          // width: 100%;
+          width: 100%;
           .bg-items {
             width: 100%;
           }
         }
         .maybe-price {
+          width: 100%;
         }
+        // margin: 0 30px;
+        // @include flex(null, space-around, null, null);
       }
     }
   }
@@ -174,18 +178,11 @@
     }
     .maybe {
       .maybe-list {
-        flex-direction: column;
-        align-items: center;
+        margin: 0 30px;
+        @include flex(null, space-around, null, null);
 
         .maybe-items {
-          margin: 20px 0;
-          width: 100%;
-          .bg-items {
-            width: 100%;
-          }
-        }
-        .maybe-price {
-          width: 100%;
+          margin: 10px 5px;
         }
       }
     }

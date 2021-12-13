@@ -60,17 +60,22 @@
     padding: 0 1rem;
   }
   .section .maybe .maybe-list {
-    margin: 0 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section .maybe .maybe-list .maybe-items {
     margin: 20px 0;
+    width: 100%;
   }
   .section .maybe .maybe-list .maybe-items .bg-items {
+    width: 100%;
+  }
+  .section .maybe .maybe-list .maybe-price {
     width: 100%;
   }
   .gem-bg {
@@ -143,27 +148,16 @@
     padding: 0 20px;
     width: 100%;
   }
-  .section .maybe {
-    padding: 0 1rem;
-  }
   .section .maybe .maybe-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin: 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .section .maybe .maybe-list .maybe-items {
-    margin: 20px 0;
-    width: 100%;
-  }
-  .section .maybe .maybe-list .maybe-items .bg-items {
-    width: 100%;
-  }
-  .section .maybe .maybe-list .maybe-price {
-    width: 100%;
+    margin: 10px 5px;
   }
   .gem-bg {
     height: auto;
@@ -931,17 +925,22 @@
     padding: 0 1rem;
   }
   .section .maybe .maybe-list {
-    margin: 0 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section .maybe .maybe-list .maybe-items {
     margin: 20px 0;
+    width: 100%;
   }
   .section .maybe .maybe-list .maybe-items .bg-items {
+    width: 100%;
+  }
+  .section .maybe .maybe-list .maybe-price {
     width: 100%;
   }
   .gem-bg {
@@ -1014,27 +1013,16 @@
     padding: 0 20px;
     width: 100%;
   }
-  .section .maybe {
-    padding: 0 1rem;
-  }
   .section .maybe .maybe-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin: 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .section .maybe .maybe-list .maybe-items {
-    margin: 20px 0;
-    width: 100%;
-  }
-  .section .maybe .maybe-list .maybe-items .bg-items {
-    width: 100%;
-  }
-  .section .maybe .maybe-list .maybe-price {
-    width: 100%;
+    margin: 10px 5px;
   }
   .gem-bg {
     height: auto;
@@ -1539,17 +1527,22 @@ h3 {
     padding: 0 1rem;
   }
   .section .maybe .maybe-list {
-    margin: 0 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section .maybe .maybe-list .maybe-items {
     margin: 20px 0;
+    width: 100%;
   }
   .section .maybe .maybe-list .maybe-items .bg-items {
+    width: 100%;
+  }
+  .section .maybe .maybe-list .maybe-price {
     width: 100%;
   }
   .gem-bg {
@@ -1622,27 +1615,16 @@ h3 {
     padding: 0 20px;
     width: 100%;
   }
-  .section .maybe {
-    padding: 0 1rem;
-  }
   .section .maybe .maybe-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin: 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .section .maybe .maybe-list .maybe-items {
-    margin: 20px 0;
-    width: 100%;
-  }
-  .section .maybe .maybe-list .maybe-items .bg-items {
-    width: 100%;
-  }
-  .section .maybe .maybe-list .maybe-price {
-    width: 100%;
+    margin: 10px 5px;
   }
   .gem-bg {
     height: auto;
