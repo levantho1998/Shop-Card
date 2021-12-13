@@ -105,7 +105,11 @@
   }
   .footer {
     .footer-child {
-      justify-content: space-around;
+      @include flex(column, null, center, null);
+      text-align: center;
+      .suppot {
+        @include flex(column, null, null, null);
+      }
     }
   }
 }
